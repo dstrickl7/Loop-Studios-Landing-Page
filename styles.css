@@ -23,21 +23,26 @@ body {
   margin: 0 1rem;
   margin-top: 1.25rem;
   padding: 1.5rem;
-  height: 40%;
+  height: 45%;
   font-family: "Josefin Sans", sans-serif;
   font-size: 2.75rem;
   font-weight: 200; }
 
 .logo-container {
-  position: absolute;
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 90%;
   margin: 1.5rem;
   margin-bottom: 2rem;
-  top: 0;
   z-index: 10; }
+
+.nav-container {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between; }
 
 .navbar {
   display: none; }
@@ -94,7 +99,9 @@ body {
     padding: 1rem; }
 
 .interactive-img {
+  background: center/cover no-repeat url("images/desktop/image-interactive.jpg");
   width: 90vw;
+  height: 50vh;
   margin-bottom: 2.5rem; }
 
 .about-title {
@@ -192,15 +199,62 @@ footer {
   padding: .5rem; }
 
 @media (min-width: 1440px) {
+  .hero {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+    color: white;
+    background: center/cover no-repeat url("images/desktop/image-hero.jpg");
+    height: 85vh;
+    padding: 3rem; }
+
+  .hero-title {
+    display: flex;
+    align-items: center;
+    border: solid white 0.15rem;
+    padding: 1.5rem;
+    margin: 4rem;
+    width: 48vw;
+    height: 55%;
+    font-size: 5rem;
+    font-weight: 200;
+    position: relative;
+    top: 3rem; }
+
+  .nav-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4rem; }
+
+  .logo-container {
+    position: relative;
+    display: block;
+    margin: 0;
+    padding: 0;
+    width: auto; }
+
   .navbar {
     display: flex; }
 
-  .interactive-img {
-    background-image: url("images/desktop/image-interactive.jpg");
-    width: 90vw; }
+  .navlist {
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    padding: 0; }
 
-  .about-container {
-    background: center/cover no-repeat url("images/desktop/image-hero.jpg"); }
+  .navlinks {
+    padding: .75rem;
+    font: 1em "Alata", sans-serif; }
+
+  .hamburger {
+    display: none; }
+
+  .interactive-img {
+    background-image: center/cover no-repeat url("images/desktop/image-interactive.jpg");
+    width: 50vw;
+    height: 50vh; }
 
   .product1 {
     background: center/cover no-repeat url("images/desktop/image-deep-earth.jpg"); }
