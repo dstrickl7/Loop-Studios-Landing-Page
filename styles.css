@@ -198,6 +198,87 @@ footer {
 .social-icons img {
   padding: .5rem; }
 
+@media (min-width: 1024px) and (max-width: 1440px) {
+  .hero {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+    color: white;
+    background: center/cover no-repeat url("images/desktop/image-hero.jpg");
+    height: 85vh;
+    padding: 3rem; }
+
+  .hero-title {
+    display: flex;
+    align-items: center;
+    border: solid white 0.15rem;
+    padding: 1.5rem;
+    margin: 4rem;
+    width: 48vw;
+    height: 55%;
+    font-size: 5rem;
+    font-weight: 200;
+    position: relative;
+    top: 3rem; }
+
+  .nav-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4rem; }
+
+  .logo-container {
+    position: relative;
+    display: block;
+    margin: 0;
+    padding: 0;
+    width: auto; }
+
+  .navbar {
+    display: flex; }
+
+  .navlist {
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    padding: 0; }
+
+  .navlinks {
+    padding: .75rem;
+    font: 1em "Alata", sans-serif; }
+
+  .hamburger {
+    display: none; }
+
+  .interactive-img {
+    background-image: center/cover no-repeat url("images/desktop/image-interactive.jpg");
+    width: 50vw;
+    height: 50vh; }
+
+  .product1 {
+    background: center/cover no-repeat url("images/desktop/image-deep-earth.jpg"); }
+
+  .product2 {
+    background: center/cover no-repeat url("images/desktop/image-night-arcade.jpg"); }
+
+  .product3 {
+    background: center/cover no-repeat url("images/desktop/image-soccer-team.jpg"); }
+
+  .product4 {
+    background: center/cover no-repeat url("images/desktop/image-grid.jpg"); }
+
+  .product5 {
+    background: center/cover no-repeat url("images/desktop/image-from-above.jpg"); }
+
+  .product6 {
+    background: center/cover no-repeat url("images/desktop/image-pocket-borealis.jpg"); }
+
+  .product7 {
+    background: center/cover no-repeat url("images/desktop/image-curiosity.jpg"); }
+
+  .product8 {
+    background: center/cover no-repeat url("images/desktop/image-fisheye.jpg"); } }
 @media (min-width: 1440px) {
   .hero {
     display: flex;
@@ -255,6 +336,26 @@ footer {
     background-image: center/cover no-repeat url("images/desktop/image-interactive.jpg");
     width: 50vw;
     height: 50vh; }
+
+  .main-products-heading {
+    font-size: 3rem;
+    text-align: left;
+    padding: 0 5rem; }
+
+  .btn {
+    position: relative;
+    margin: 0;
+    bottom: 70rem;
+    left: 85vw;
+    width: 10%; }
+
+  .products-container {
+    padding: 5rem;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 1.5rem; }
+
+  .product {
+    height: 60vh; }
 
   .product1 {
     background: center/cover no-repeat url("images/desktop/image-deep-earth.jpg"); }
