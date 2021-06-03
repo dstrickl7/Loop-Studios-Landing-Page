@@ -333,10 +333,10 @@ footer{
     .products-container{
         padding: 5rem;
         grid-template-columns: repeat(4, 1fr);
-        grid-gap: 1.5rem;
+        grid-gap: .5rem;
         h2{
             font-size: 1.25rem;
-            width: 60%;
+            width: 80%;
         }
     }
 
@@ -345,12 +345,13 @@ footer{
         background-color: $black;
         padding: 0;
         h2{
-            padding: 1rem;
+            padding: 1.5rem;
         }    
     }
 
     .product1{
-        background: $fill url("images/desktop/image-deep-earth.jpg");
+        background: linear-gradient(rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.7)), $fill url("images/desktop/image-deep-earth.jpg");
+        
         &:hover{
             background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), $fill url("images/desktop/image-deep-earth.jpg");
         }
@@ -358,44 +359,50 @@ footer{
     }
     
     .product2{
-        background: $fill url("images/desktop/image-night-arcade.jpg");
+        background: linear-gradient(rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.7)), $fill url("images/desktop/image-night-arcade.jpg");
         &:hover{
             background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), $fill url("images/desktop/image-night-arcade.jpg");
         }
     }
     
     .product3{
-        background: $fill url("images/desktop/image-soccer-team.jpg");&:hover{
+        background: linear-gradient(rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.7)), $fill url("images/desktop/image-soccer-team.jpg");
+        &:hover{
             background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), $fill url("images/desktop/image-soccer-team.jpg");
         }
     }
     
     .product4{
-        background: $fill url("images/desktop/image-grid.jpg");&:hover{
+        background: linear-gradient(rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.7)), $fill url("images/desktop/image-grid.jpg");
+        &:hover{
             background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), $fill url("images/desktop/image-grid.jpg");
         }
     }
     
     .product5{
-        background: $fill url("images/desktop/image-from-above.jpg");&:hover{
+        background: linear-gradient(rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.7)), $fill url("images/desktop/image-from-above.jpg");
+        &:hover{
             background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), $fill url("images/desktop/image-from-above.jpg");
         }
     }
     
     .product6{
-        background: $fill url("images/desktop/image-pocket-borealis.jpg");&:hover{
+        background: linear-gradient(rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.7)), $fill url("images/desktop/image-pocket-borealis.jpg");
+        &:hover{
             background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), $fill url("images/desktop/image-pocket-borealis.jpg");
         }
     }
     
     .product7{
-        background: $fill url("images/desktop/image-curiosity.jpg");&:hover{
+        background: linear-gradient(rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.7)), $fill url("images/desktop/image-curiosity.jpg");
+        &:hover{
             background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), $fill url("images/desktop/image-curiosity.jpg");
         }
     }
     
     .product8{
-        background: $fill url("images/desktop/image-fisheye.jpg");&:hover{
+        background: linear-gradient(rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.7)), $fill url("images/desktop/image-fisheye.jpg");
+        &:hover{
             background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), $fill url("images/desktop/image-fisheye.jpg");
         }
     }
@@ -480,6 +487,13 @@ footer{
         font-size: 3rem;
         text-align: left;
         padding: 0 5rem;
+    }
+
+    .products-container{
+        grid-gap: 1.5rem;
+        h2{
+            font-size: 1.5rem; 
+        }
     }
 
     .btn{

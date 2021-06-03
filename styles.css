@@ -262,55 +262,55 @@ footer {
   .products-container {
     padding: 5rem;
     grid-template-columns: repeat(4, 1fr);
-    grid-gap: 1.5rem; }
+    grid-gap: .5rem; }
     .products-container h2 {
       font-size: 1.25rem;
-      width: 60%; }
+      width: 80%; }
 
   .product {
     height: 60vh;
     background-color: black;
     padding: 0; }
     .product h2 {
-      padding: 1rem; }
+      padding: 1.5rem; }
 
   .product1 {
-    background: center/cover no-repeat url("images/desktop/image-deep-earth.jpg"); }
+    background: linear-gradient(rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.7)), center/cover no-repeat url("images/desktop/image-deep-earth.jpg"); }
     .product1:hover {
       background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), center/cover no-repeat url("images/desktop/image-deep-earth.jpg"); }
 
   .product2 {
-    background: center/cover no-repeat url("images/desktop/image-night-arcade.jpg"); }
+    background: linear-gradient(rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.7)), center/cover no-repeat url("images/desktop/image-night-arcade.jpg"); }
     .product2:hover {
       background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), center/cover no-repeat url("images/desktop/image-night-arcade.jpg"); }
 
   .product3 {
-    background: center/cover no-repeat url("images/desktop/image-soccer-team.jpg"); }
+    background: linear-gradient(rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.7)), center/cover no-repeat url("images/desktop/image-soccer-team.jpg"); }
     .product3:hover {
       background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), center/cover no-repeat url("images/desktop/image-soccer-team.jpg"); }
 
   .product4 {
-    background: center/cover no-repeat url("images/desktop/image-grid.jpg"); }
+    background: linear-gradient(rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.7)), center/cover no-repeat url("images/desktop/image-grid.jpg"); }
     .product4:hover {
       background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), center/cover no-repeat url("images/desktop/image-grid.jpg"); }
 
   .product5 {
-    background: center/cover no-repeat url("images/desktop/image-from-above.jpg"); }
+    background: linear-gradient(rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.7)), center/cover no-repeat url("images/desktop/image-from-above.jpg"); }
     .product5:hover {
       background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), center/cover no-repeat url("images/desktop/image-from-above.jpg"); }
 
   .product6 {
-    background: center/cover no-repeat url("images/desktop/image-pocket-borealis.jpg"); }
+    background: linear-gradient(rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.7)), center/cover no-repeat url("images/desktop/image-pocket-borealis.jpg"); }
     .product6:hover {
       background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), center/cover no-repeat url("images/desktop/image-pocket-borealis.jpg"); }
 
   .product7 {
-    background: center/cover no-repeat url("images/desktop/image-curiosity.jpg"); }
+    background: linear-gradient(rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.7)), center/cover no-repeat url("images/desktop/image-curiosity.jpg"); }
     .product7:hover {
       background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), center/cover no-repeat url("images/desktop/image-curiosity.jpg"); }
 
   .product8 {
-    background: center/cover no-repeat url("images/desktop/image-fisheye.jpg"); }
+    background: linear-gradient(rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.7)), center/cover no-repeat url("images/desktop/image-fisheye.jpg"); }
     .product8:hover {
       background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), center/cover no-repeat url("images/desktop/image-fisheye.jpg"); } }
 @media (min-width: 1440px) {
@@ -368,6 +368,11 @@ footer {
     font-size: 3rem;
     text-align: left;
     padding: 0 5rem; }
+
+  .products-container {
+    grid-gap: 1.5rem; }
+    .products-container h2 {
+      font-size: 1.5rem; }
 
   .btn {
     position: relative;
