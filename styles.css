@@ -256,10 +256,26 @@ footer {
     flex-direction: row;
     margin: 0;
     padding: 0; }
+    .navlist li {
+      position: relative; }
 
   .navlinks {
     padding: .75rem;
     font: 1em "Alata", sans-serif; }
+
+  .navlinks:after {
+    bottom: 0;
+    content: "";
+    height: .25rem;
+    left: 50%;
+    position: absolute;
+    background-color: white;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0; }
+
+  .navlinks:hover:after {
+    width: 100%;
+    left: 0; }
 
   .hamburger {
     display: none; }
@@ -303,7 +319,8 @@ footer {
   .product {
     height: 60vh;
     background-color: black;
-    padding: 0; }
+    padding: 0;
+    cursor: pointer; }
     .product h2 {
       padding: 1.5rem; }
 
@@ -318,42 +335,50 @@ footer {
   .product1 {
     background: linear-gradient(rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.7)), center/cover no-repeat url("images/desktop/image-deep-earth.jpg"); }
     .product1:hover {
-      background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), center/cover no-repeat url("images/desktop/image-deep-earth.jpg"); }
+      background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), center/cover no-repeat url("images/desktop/image-deep-earth.jpg");
+      color: black; }
 
   .product2 {
     background: linear-gradient(rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.7)), center/cover no-repeat url("images/desktop/image-night-arcade.jpg"); }
     .product2:hover {
-      background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), center/cover no-repeat url("images/desktop/image-night-arcade.jpg"); }
+      background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), center/cover no-repeat url("images/desktop/image-night-arcade.jpg");
+      color: black; }
 
   .product3 {
     background: linear-gradient(rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.7)), center/cover no-repeat url("images/desktop/image-soccer-team.jpg"); }
     .product3:hover {
-      background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), center/cover no-repeat url("images/desktop/image-soccer-team.jpg"); }
+      background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), center/cover no-repeat url("images/desktop/image-soccer-team.jpg");
+      color: black; }
 
   .product4 {
     background: linear-gradient(rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.7)), center/cover no-repeat url("images/desktop/image-grid.jpg"); }
     .product4:hover {
-      background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), center/cover no-repeat url("images/desktop/image-grid.jpg"); }
+      background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), center/cover no-repeat url("images/desktop/image-grid.jpg");
+      color: black; }
 
   .product5 {
     background: linear-gradient(rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.7)), center/cover no-repeat url("images/desktop/image-from-above.jpg"); }
     .product5:hover {
-      background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), center/cover no-repeat url("images/desktop/image-from-above.jpg"); }
+      background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), center/cover no-repeat url("images/desktop/image-from-above.jpg");
+      color: black; }
 
   .product6 {
     background: linear-gradient(rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.7)), center/cover no-repeat url("images/desktop/image-pocket-borealis.jpg"); }
     .product6:hover {
-      background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), center/cover no-repeat url("images/desktop/image-pocket-borealis.jpg"); }
+      background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), center/cover no-repeat url("images/desktop/image-pocket-borealis.jpg");
+      color: black; }
 
   .product7 {
     background: linear-gradient(rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.7)), center/cover no-repeat url("images/desktop/image-curiosity.jpg"); }
     .product7:hover {
-      background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), center/cover no-repeat url("images/desktop/image-curiosity.jpg"); }
+      background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), center/cover no-repeat url("images/desktop/image-curiosity.jpg");
+      color: black; }
 
   .product8 {
     background: linear-gradient(rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.7)), center/cover no-repeat url("images/desktop/image-fisheye.jpg"); }
     .product8:hover {
-      background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), center/cover no-repeat url("images/desktop/image-fisheye.jpg"); }
+      background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), center/cover no-repeat url("images/desktop/image-fisheye.jpg");
+      color: black; }
 
   .btn {
     position: absolute;
@@ -363,7 +388,8 @@ footer {
     right: 5rem; }
     .btn:hover {
       background-color: black;
-      color: white; }
+      color: white;
+      cursor: pointer; }
 
   .footer-logo {
     margin: 0;
@@ -395,7 +421,8 @@ footer {
     text-align: right;
     grid-column: 2;
     grid-row: 1; } }
-@media (min-width: 1440px) {
+/*Figure out how to make below media query display properly*/
+@media (min-width: 1440px) and (max-width: 1831px) {
   .hero {
     display: flex;
     align-items: flex-start;
@@ -469,63 +496,236 @@ footer {
     grid-gap: 1.5rem; }
     .products-container h2 {
       font-size: 2rem; } }
-@media (min-width: 1440px) and (max-width: 4000px) {
+@media (min-width: 1831px) and (max-width: 4000px) {
+  .hero {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+    color: white;
+    background: center/cover no-repeat url("images/desktop/image-hero.jpg");
+    height: 85vh; }
+
+  .hero-title {
+    display: flex;
+    align-items: center;
+    border: solid white 0.15rem;
+    margin: 10rem;
+    width: 50vw;
+    height: 55%;
+    font-size: 10rem;
+    font-weight: 200;
+    position: relative;
+    top: 3rem; }
+
+  .nav-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5rem 10rem; }
+
+  .logo-container {
+    position: relative;
+    display: block;
+    margin: 0;
+    padding: 0;
+    width: auto; }
+
+  .logo {
+    width: 10vw; }
+
+  .navbar {
+    display: flex; }
+
+  .navlist {
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    padding: 0; }
+    .navlist li {
+      position: relative; }
+
+  .navlinks {
+    padding: 1.5rem;
+    font: 1.5rem "Alata", sans-serif; }
+
+  .navlinks:after {
+    bottom: 0;
+    content: "";
+    height: .25rem;
+    left: 50%;
+    position: absolute;
+    background-color: white;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0; }
+
+  .navlinks:hover:after {
+    width: 100%;
+    left: 0; }
+
+  .hamburger {
+    display: none; }
+
+  .container {
+    margin: 4rem;
+    margin-bottom: 6rem;
+    position: relative;
+    flex-direction: row; }
+
+  .interactive-img {
+    background-image: center/cover no-repeat url("images/desktop/image-interactive.jpg");
+    width: 50vw;
+    height: 60vh;
+    position: relative;
+    right: 15vw; }
+
+  .about-container {
+    width: 35vw;
+    height: 55vh;
+    margin: 0;
+    padding-left: 3rem;
+    padding-top: 1.5rem;
+    position: absolute;
+    left: 43vw;
+    bottom: -5vh;
+    background-color: white;
+    text-align: left;
+    align-items: center;
+    justify-content: center;
+    justify-self: center;
+    font-size: 5rem; }
+    .about-container p {
+      padding: 0;
+      padding-top: 1.5rem;
+      font-size: 1.5rem; }
+
+  .main-products-heading {
+    text-align: left;
+    margin-bottom: 0;
+    padding: 0 5rem;
+    font-size: 4rem; }
+
+  .product {
+    height: 60vh;
+    background-color: black;
+    padding: 0;
+    cursor: pointer; }
+    .product h2 {
+      padding: 1.5rem; }
+
   .products-container {
     padding: 5rem;
     grid-template-columns: repeat(4, 1fr);
-    grid-gap: .5rem; }
+    grid-gap: 2rem; }
     .products-container h2 {
-      font-size: 2rem;
+      font-size: 5rem;
       width: 80%; }
 
   .product1 {
     background: linear-gradient(rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.7)), center/cover no-repeat url("images/desktop/image-deep-earth.jpg"); }
     .product1:hover {
-      background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), center/cover no-repeat url("images/desktop/image-deep-earth.jpg"); }
+      background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), center/cover no-repeat url("images/desktop/image-deep-earth.jpg");
+      color: black; }
 
   .product2 {
     background: linear-gradient(rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.7)), center/cover no-repeat url("images/desktop/image-night-arcade.jpg"); }
     .product2:hover {
-      background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), center/cover no-repeat url("images/desktop/image-night-arcade.jpg"); }
+      background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), center/cover no-repeat url("images/desktop/image-night-arcade.jpg");
+      color: black; }
 
   .product3 {
     background: linear-gradient(rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.7)), center/cover no-repeat url("images/desktop/image-soccer-team.jpg"); }
     .product3:hover {
-      background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), center/cover no-repeat url("images/desktop/image-soccer-team.jpg"); }
+      background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), center/cover no-repeat url("images/desktop/image-soccer-team.jpg");
+      color: black; }
 
   .product4 {
     background: linear-gradient(rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.7)), center/cover no-repeat url("images/desktop/image-grid.jpg"); }
     .product4:hover {
-      background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), center/cover no-repeat url("images/desktop/image-grid.jpg"); }
+      background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), center/cover no-repeat url("images/desktop/image-grid.jpg");
+      color: black; }
 
   .product5 {
     background: linear-gradient(rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.7)), center/cover no-repeat url("images/desktop/image-from-above.jpg"); }
     .product5:hover {
-      background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), center/cover no-repeat url("images/desktop/image-from-above.jpg"); }
+      background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), center/cover no-repeat url("images/desktop/image-from-above.jpg");
+      color: black; }
 
   .product6 {
     background: linear-gradient(rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.7)), center/cover no-repeat url("images/desktop/image-pocket-borealis.jpg"); }
     .product6:hover {
-      background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), center/cover no-repeat url("images/desktop/image-pocket-borealis.jpg"); }
+      background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), center/cover no-repeat url("images/desktop/image-pocket-borealis.jpg");
+      color: black; }
 
   .product7 {
     background: linear-gradient(rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.7)), center/cover no-repeat url("images/desktop/image-curiosity.jpg"); }
     .product7:hover {
-      background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), center/cover no-repeat url("images/desktop/image-curiosity.jpg"); }
+      background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), center/cover no-repeat url("images/desktop/image-curiosity.jpg");
+      color: black; }
 
   .product8 {
     background: linear-gradient(rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.7)), center/cover no-repeat url("images/desktop/image-fisheye.jpg"); }
     .product8:hover {
-      background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), center/cover no-repeat url("images/desktop/image-fisheye.jpg"); }
+      background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), center/cover no-repeat url("images/desktop/image-fisheye.jpg");
+      color: black; }
 
   .btn {
     position: absolute;
     margin: 0;
     width: 15%;
     top: 0;
-    right: 5rem; }
+    right: 5rem;
+    font-size: 1.5rem; }
     .btn:hover {
       background-color: black;
-      color: white; } }
+      color: white;
+      cursor: pointer; }
+
+  .footer-logo {
+    margin: 0;
+    margin-bottom: 3rem;
+    padding: 0;
+    width: 10vw; }
+
+  footer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 3rem 5rem; }
+    footer ul {
+      display: flex;
+      flex-direction: row;
+      margin: 0;
+      padding: 0;
+      grid-column: 1;
+      grid-row: 2; }
+      footer ul li {
+        padding: 0; }
+        footer ul li a {
+          padding-right: 1.5rem;
+          font-size: 2rem;
+          cursor: pointer; }
+        footer ul li a:after {
+          bottom: 0;
+          content: "";
+          height: .25rem;
+          left: 50%;
+          position: absolute;
+          background-color: white;
+          transition: width 0.3s ease 0s, left 0.3s ease 0s;
+          width: 0; }
+        footer ul li a:hover:after {
+          width: 100%;
+          left: 0; }
+    footer p {
+      margin: 0;
+      text-align: right;
+      font-size: 2rem; }
+
+  .social-icons {
+    margin: 0;
+    margin-bottom: 1.5rem;
+    text-align: right;
+    grid-column: 2;
+    grid-row: 1; } }
 
 /*# sourceMappingURL=styles.css.map */

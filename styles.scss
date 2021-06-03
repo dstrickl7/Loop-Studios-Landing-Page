@@ -321,12 +321,32 @@ footer{
         flex-direction: row;
         margin: 0;
         padding: 0;
+        li{
+            position: relative;
+        }
+        
     }
 
     .navlinks{
         padding: .75rem;
         font: 1em $alata;
     }
+
+    .navlinks:after{
+        bottom: 0;
+        content: "";
+        height: .25rem;
+        left: 50%;
+        position: absolute;
+        background-color: $white;
+        transition: width 0.3s ease 0s, left 0.3s ease 0s;
+        width: 0;
+      }
+      
+      .navlinks:hover:after{
+        width: 100%;
+        left: 0;
+      }
 
     .hamburger{
         display: none;
@@ -380,7 +400,8 @@ footer{
         padding: 0;
         h2{
             padding: 1.5rem;
-        }    
+        }   
+        cursor: pointer; 
     }
 
     .products-container{
@@ -398,6 +419,7 @@ footer{
         
         &:hover{
             background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), $fill url("images/desktop/image-deep-earth.jpg");
+            color: $black;
         }
         
     }
@@ -406,6 +428,7 @@ footer{
         background: linear-gradient(rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.7)), $fill url("images/desktop/image-night-arcade.jpg");
         &:hover{
             background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), $fill url("images/desktop/image-night-arcade.jpg");
+            color: $black;
         }
     }
     
@@ -413,6 +436,7 @@ footer{
         background: linear-gradient(rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.7)), $fill url("images/desktop/image-soccer-team.jpg");
         &:hover{
             background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), $fill url("images/desktop/image-soccer-team.jpg");
+            color: $black;
         }
     }
     
@@ -420,6 +444,7 @@ footer{
         background: linear-gradient(rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.7)), $fill url("images/desktop/image-grid.jpg");
         &:hover{
             background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), $fill url("images/desktop/image-grid.jpg");
+            color: $black;
         }
     }
     
@@ -427,6 +452,7 @@ footer{
         background: linear-gradient(rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.7)), $fill url("images/desktop/image-from-above.jpg");
         &:hover{
             background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), $fill url("images/desktop/image-from-above.jpg");
+            color: $black;
         }
     }
     
@@ -434,6 +460,7 @@ footer{
         background: linear-gradient(rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.7)), $fill url("images/desktop/image-pocket-borealis.jpg");
         &:hover{
             background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), $fill url("images/desktop/image-pocket-borealis.jpg");
+            color: $black;
         }
     }
     
@@ -441,6 +468,7 @@ footer{
         background: linear-gradient(rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.7)), $fill url("images/desktop/image-curiosity.jpg");
         &:hover{
             background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), $fill url("images/desktop/image-curiosity.jpg");
+            color: $black;
         }
     }
     
@@ -448,6 +476,7 @@ footer{
         background: linear-gradient(rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.7)), $fill url("images/desktop/image-fisheye.jpg");
         &:hover{
             background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), $fill url("images/desktop/image-fisheye.jpg");
+            color: $black;
         }
     }
 
@@ -460,6 +489,7 @@ footer{
         &:hover{
             background-color: $black;
             color: $white;
+            cursor: pointer;
         }
     }
 
@@ -502,7 +532,11 @@ footer{
     }
 }
 
-@media (min-width: 1440px){
+
+/*Figure out how to make below media query display properly*/
+
+@media (min-width: 1440px) and (max-width: 1831px
+){
     .hero{
         display: flex;
         align-items: flex-start;
@@ -546,12 +580,32 @@ footer{
         flex-direction: row;
         margin: 0;
         padding: 0;
+        // li{
+        //     position: relative;
+        // }
+        
     }
 
     .navlinks{
         padding: .75rem;
         font: 1em $alata;
     }
+
+    // .navlinks:after{
+    //     bottom: 0;
+    //     content: "";
+    //     height: .25rem;
+    //     left: 50%;
+    //     position: absolute;
+    //     background-color: $white;
+    //     transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    //     width: 0;
+    //   }
+      
+    //   .navlinks:hover:after{
+    //     width: 100%;
+    //     left: 0;
+    //   }
 
     .hamburger{
         display: none;
@@ -596,14 +650,151 @@ footer{
     }
 }
 
-@media (min-width: 1440px) and (max-width: 4000px
+@media (min-width: 1831px) and (max-width: 4000px
 ){
+    .hero{
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-around;
+        color: $white;
+        background: $fill url("images/desktop/image-hero.jpg");
+        height: 85vh;
+    }
+
+    .hero-title{
+        display: flex;
+        align-items: center;
+        border: solid $white .15rem;
+        margin: 10rem;
+        width: 50vw;
+        height: 55%;
+        font-size: 10rem;
+        font-weight: 200;
+        position: relative;
+        top: 3rem;
+    }
+
+    .nav-container{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 5rem 10rem;
+    }
+
+    .logo-container{
+        position: relative;
+        display: block;
+        margin: 0;
+        padding: 0;
+        width: auto;
+    }
+
+    .logo{
+        width: 10vw;
+    }
+
+    .navbar{
+        display: flex; 
+        
+    }
+
+    .navlist{
+        display: flex;
+        flex-direction: row;
+        margin: 0;
+        padding: 0;
+        li{
+            position: relative;
+        }
+        
+    }
+
+    .navlinks{
+        padding: 1.5rem;
+        font: 1.5rem $alata;
+    }
+
+    .navlinks:after{
+        bottom: 0;
+        content: "";
+        height: .25rem;
+        left: 50%;
+        position: absolute;
+        background-color: $white;
+        transition: width 0.3s ease 0s, left 0.3s ease 0s;
+        width: 0;
+        }
+        
+        .navlinks:hover:after{
+        width: 100%;
+        left: 0;
+        }
+
+    .hamburger{
+        display: none;
+    }
+
+    .container{
+        margin: 4rem;
+        margin-bottom: 6rem;
+        position: relative;
+        flex-direction: row; 
+    }
+
+    .interactive-img{
+        background-image: $fill url("images/desktop/image-interactive.jpg");
+        width: 50vw;
+        height: 60vh;
+        position: relative;
+        right: 15vw;
+    }
+
+    .about-container{
+        width: 35vw;
+        height: 55vh;
+        margin: 0;
+        padding-left: 3rem;
+        padding-top: 1.5rem;
+        position: absolute;
+        left: 43vw;
+        bottom: -5vh;
+        background-color: $white;
+        text-align: left;
+        align-items: center;
+        justify-content: center;
+        justify-self: center;
+        font-size: 5rem;
+        p{
+            padding: 0;
+            padding-top: 1.5rem;
+            font-size: 1.5rem;
+        }
+    }
+
+    .main-products-heading{
+        text-align: left;
+        margin-bottom: 0;
+        padding: 0 5rem;
+        font-size: 4rem;
+    }
+
+    .product{
+        height:60vh;
+        background-color: $black;
+        padding: 0;
+        h2{
+            padding: 1.5rem;
+        }   
+        cursor: pointer; 
+    }
+
     .products-container{
         padding: 5rem;
         grid-template-columns: repeat(4, 1fr);
-        grid-gap: .5rem;
+        grid-gap: 2rem;
         h2{
-            font-size: 2rem;
+            font-size: 5rem;
             width: 80%;
         }
     }
@@ -613,6 +804,7 @@ footer{
         
         &:hover{
             background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), $fill url("images/desktop/image-deep-earth.jpg");
+            color: $black;
         }
         
     }
@@ -621,6 +813,7 @@ footer{
         background: linear-gradient(rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.7)), $fill url("images/desktop/image-night-arcade.jpg");
         &:hover{
             background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), $fill url("images/desktop/image-night-arcade.jpg");
+            color: $black;
         }
     }
     
@@ -628,6 +821,7 @@ footer{
         background: linear-gradient(rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.7)), $fill url("images/desktop/image-soccer-team.jpg");
         &:hover{
             background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), $fill url("images/desktop/image-soccer-team.jpg");
+            color: $black;
         }
     }
     
@@ -635,6 +829,7 @@ footer{
         background: linear-gradient(rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.7)), $fill url("images/desktop/image-grid.jpg");
         &:hover{
             background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), $fill url("images/desktop/image-grid.jpg");
+            color: $black;
         }
     }
     
@@ -642,6 +837,7 @@ footer{
         background: linear-gradient(rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.7)), $fill url("images/desktop/image-from-above.jpg");
         &:hover{
             background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), $fill url("images/desktop/image-from-above.jpg");
+            color: $black;
         }
     }
     
@@ -649,6 +845,7 @@ footer{
         background: linear-gradient(rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.7)), $fill url("images/desktop/image-pocket-borealis.jpg");
         &:hover{
             background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), $fill url("images/desktop/image-pocket-borealis.jpg");
+            color: $black;
         }
     }
     
@@ -656,6 +853,7 @@ footer{
         background: linear-gradient(rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.7)), $fill url("images/desktop/image-curiosity.jpg");
         &:hover{
             background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), $fill url("images/desktop/image-curiosity.jpg");
+            color: $black;
         }
     }
     
@@ -663,6 +861,7 @@ footer{
         background: linear-gradient(rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.7)), $fill url("images/desktop/image-fisheye.jpg");
         &:hover{
             background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), $fill url("images/desktop/image-fisheye.jpg");
+            color: $black;
         }
     }
 
@@ -672,9 +871,69 @@ footer{
         width: 15%;
         top: 0;
         right: 5rem;
+        font-size: 1.5rem;
         &:hover{
             background-color: $black;
             color: $white;
+            cursor: pointer;
         }
+    }
+
+    .footer-logo{
+        margin: 0;
+        margin-bottom: 3rem;
+        padding: 0;
+        width: 10vw;
+    }
+
+    footer{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        padding: 3rem 5rem;
+        ul{
+            display: flex;
+            flex-direction: row;
+            margin: 0;
+            padding: 0;
+            grid-column: 1;
+            grid-row: 2;
+            li{
+                padding: 0;
+                a{
+                padding-right: 1.5rem;
+                font-size: 2rem;
+                cursor: pointer;
+                }
+                a:after{
+                    bottom: 0;
+                    content: "";
+                    height: .25rem;
+                    left: 50%;
+                    position: absolute;
+                    background-color: $white;
+                    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+                    width: 0;
+                    }
+                a:hover:after{
+                    width: 100%;
+                    left: 0;
+                    }
+                
+            }
+            
+        }
+        p{
+            margin: 0;
+            text-align: right;
+            font-size: 2rem;
+        }
+    }
+
+    .social-icons{
+        margin: 0;
+        margin-bottom: 1.5rem;
+        text-align: right;
+        grid-column: 2;
+        grid-row: 1;
     }
 }
