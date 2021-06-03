@@ -218,6 +218,10 @@ body{
     text-transform: uppercase;
     font-family: alata;
     letter-spacing: .25rem;
+    &:hover{
+        background-color: $black;
+        color: $white;
+    }
 }
 
 footer{
@@ -270,10 +274,10 @@ footer{
         align-items: center;
         border: solid $white .15rem;
         padding: 1.5rem;
-        margin: 4rem;
-        width: 48vw;
+        margin: 3rem;
+        width: 46.5vw;
         height: 55%;
-        font-size: 5rem;
+        font-size: 3.5rem;
         font-weight: 200;
         position: relative;
         top: 3rem;
@@ -326,38 +330,84 @@ footer{
     
     }
 
+    .products-container{
+        padding: 5rem;
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 1.5rem;
+        h2{
+            font-size: 1.25rem;
+            width: 60%;
+        }
+    }
+
+    .product{
+        height:60vh;
+        background-color: $black;
+        padding: 0;
+        h2{
+            padding: 1rem;
+        }    
+    }
 
     .product1{
         background: $fill url("images/desktop/image-deep-earth.jpg");
+        &:hover{
+            background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), $fill url("images/desktop/image-deep-earth.jpg");
+        }
+        
     }
     
     .product2{
         background: $fill url("images/desktop/image-night-arcade.jpg");
+        &:hover{
+            background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), $fill url("images/desktop/image-night-arcade.jpg");
+        }
     }
     
     .product3{
-        background: $fill url("images/desktop/image-soccer-team.jpg");
+        background: $fill url("images/desktop/image-soccer-team.jpg");&:hover{
+            background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), $fill url("images/desktop/image-soccer-team.jpg");
+        }
     }
     
     .product4{
-        background: $fill url("images/desktop/image-grid.jpg");
+        background: $fill url("images/desktop/image-grid.jpg");&:hover{
+            background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), $fill url("images/desktop/image-grid.jpg");
+        }
     }
     
     .product5{
-        background: $fill url("images/desktop/image-from-above.jpg");
+        background: $fill url("images/desktop/image-from-above.jpg");&:hover{
+            background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), $fill url("images/desktop/image-from-above.jpg");
+        }
     }
     
     .product6{
-        background: $fill url("images/desktop/image-pocket-borealis.jpg");
+        background: $fill url("images/desktop/image-pocket-borealis.jpg");&:hover{
+            background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), $fill url("images/desktop/image-pocket-borealis.jpg");
+        }
     }
     
     .product7{
-        background: $fill url("images/desktop/image-curiosity.jpg");
+        background: $fill url("images/desktop/image-curiosity.jpg");&:hover{
+            background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), $fill url("images/desktop/image-curiosity.jpg");
+        }
     }
     
     .product8{
-        background: $fill url("images/desktop/image-fisheye.jpg");
+        background: $fill url("images/desktop/image-fisheye.jpg");&:hover{
+            background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), $fill url("images/desktop/image-fisheye.jpg");
+        }
     }
+
+    
+
+    // .btn{
+    //     &:hover{
+    //         background-color: $black;
+    //         color: $white;
+    //     }
+    // }
 }
 
 @media (min-width: 1440px){
@@ -372,17 +422,11 @@ footer{
     }
 
     .hero-title{
-        display: flex;
-        align-items: center;
-        border: solid $white .15rem;
-        padding: 1.5rem;
         margin: 4rem;
-        width: 48vw;
-        height: 55%;
-        font-size: 5rem;
+        font-size: 4.5rem;
         font-weight: 200;
-        position: relative;
-        top: 3rem;
+        width: 48vw;
+        
     }
 
     .nav-container{
@@ -444,47 +488,5 @@ footer{
         bottom: 70rem;
         left: 85vw;
         width: 10%;
-    }
-
-    .products-container{
-        padding: 5rem;
-        grid-template-columns: repeat(4, 1fr);
-        grid-gap: 1.5rem;
-    }
-
-    .product{
-        height:60vh;
-    }
-
-    .product1{
-        background: $fill url("images/desktop/image-deep-earth.jpg");
-    }
-    
-    .product2{
-        background: $fill url("images/desktop/image-night-arcade.jpg");
-    }
-    
-    .product3{
-        background: $fill url("images/desktop/image-soccer-team.jpg");
-    }
-    
-    .product4{
-        background: $fill url("images/desktop/image-grid.jpg");
-    }
-    
-    .product5{
-        background: $fill url("images/desktop/image-from-above.jpg");
-    }
-    
-    .product6{
-        background: $fill url("images/desktop/image-pocket-borealis.jpg");
-    }
-    
-    .product7{
-        background: $fill url("images/desktop/image-curiosity.jpg");
-    }
-    
-    .product8{
-        background: $fill url("images/desktop/image-fisheye.jpg");
     }
 }
