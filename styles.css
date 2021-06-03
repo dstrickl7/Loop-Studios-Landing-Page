@@ -201,6 +201,10 @@ footer {
         text-decoration: none;
         color: white;
         font-family: "Josefin Sans", sans-serif; }
+  footer p {
+    color: #8c8c8c;
+    font-family: "Josefin Sans", sans-serif;
+    margin-bottom: 2rem; }
 
 .footer-logo {
   margin-bottom: 1.5rem;
@@ -359,7 +363,38 @@ footer {
     right: 5rem; }
     .btn:hover {
       background-color: black;
-      color: white; } }
+      color: white; }
+
+  .footer-logo {
+    margin: 0;
+    margin-bottom: 1.5rem;
+    padding: 0; }
+
+  footer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 3rem 5rem; }
+    footer ul {
+      display: flex;
+      flex-direction: row;
+      margin: 0;
+      padding: 0;
+      grid-column: 1;
+      grid-row: 2; }
+      footer ul li {
+        padding: 0; }
+        footer ul li a {
+          padding-right: .75rem; }
+    footer p {
+      margin: 0;
+      text-align: right; }
+
+  .social-icons {
+    margin: 0;
+    margin-bottom: 1.5rem;
+    text-align: right;
+    grid-column: 2;
+    grid-row: 1; } }
 @media (min-width: 1440px) {
   .hero {
     display: flex;
