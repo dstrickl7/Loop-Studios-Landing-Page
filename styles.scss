@@ -35,7 +35,7 @@ body{
     border: solid $white .15rem;
     margin: 0 1rem;
     margin-top: 1.25rem;
-    padding: 1.5rem;
+    padding: 1rem;
     height: 45%;
     font-family: $josefin;
     font-size: 2.75rem;
@@ -56,7 +56,8 @@ body{
 .nav-container{
     position: absolute;
     top: 0;
-    width: 100%;
+    left: 0;
+    width: 100vw;
     display: flex;
     justify-content: space-between;
 }
@@ -107,6 +108,13 @@ body{
     display: inline;
 }
 
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
 .about-container{
     display: flex;
     flex-direction: column;
@@ -114,9 +122,8 @@ body{
     justify-content: center;
     color: $darkgray;
     font-family: $josefin;
-    margin: 1.5rem;
-    margin-top: 5.5rem;
-    margin-bottom: 5.5rem;
+    margin: 2.5rem;
+    margin-top: 0;
     text-align: center;
     p{
         line-height: 1.5rem;
@@ -128,9 +135,10 @@ body{
 
 .interactive-img{
     background: $fill url("images/desktop/image-interactive.jpg");
-    width: 90vw;
+    width: 75vw;
     height: 50vh;
-    margin-bottom: 2.5rem;
+    margin-top: 4rem;
+    margin-bottom: 2rem;
 }
 
 .about-title{
@@ -141,7 +149,7 @@ body{
 
 .products{
     font-family: $josefin;
-
+    position: relative;
 }
 
 .main-products-heading{
@@ -216,7 +224,7 @@ body{
     background-color: $white;
     padding: .5rem;
     text-transform: uppercase;
-    font-family: alata;
+    font-family: $alata;
     letter-spacing: .25rem;
     &:hover{
         background-color: $black;
@@ -257,7 +265,7 @@ footer{
     }
 }
 
-@media (min-width: 1024px) and (max-width: 1440px
+@media (min-width: 1000px) and (max-width: 1440px
 ){
     .hero{
         display: flex;
@@ -266,16 +274,14 @@ footer{
         color: $white;
         background: $fill url("images/desktop/image-hero.jpg");
         height: 85vh;
-        padding: 3rem;
     }
 
     .hero-title{
         display: flex;
         align-items: center;
         border: solid $white .15rem;
-        padding: 1.5rem;
-        margin: 3rem;
-        width: 46.5vw;
+        margin: 4rem;
+        width: 50vw;
         height: 55%;
         font-size: 3.5rem;
         font-weight: 200;
@@ -320,14 +326,55 @@ footer{
         display: none;
     }
 
+    .container{
+        margin: 4rem;
+        margin-bottom: 6rem;
+        position: relative;
+        flex-direction: row; 
+    }
+
     .interactive-img{
         background-image: $fill url("images/desktop/image-interactive.jpg");
         width: 50vw;
-        height: 50vh
+        height: 60vh;
+        position: relative;
+        right: 15vw;
     }
 
     .about-container{
-    
+        width: 35vw;
+        height: 55vh;
+        margin: 0;
+        padding-left: 3rem;
+        padding-top: 1.5rem;
+        position: absolute;
+        left: 43vw;
+        bottom: -5vh;
+        background-color: $white;
+        text-align: left;
+        align-items: center;
+        justify-content: center;
+        justify-self: center;
+        p{
+            padding: 0;
+            padding-top: 1.5rem;
+
+        }
+    }
+
+    .main-products-heading{
+        text-align: left;
+        margin-bottom: 0;
+        padding: 0 5rem;
+    }
+
+    .product{
+        height:60vh;
+        background-color: $black;
+        padding: 0;
+        h2{
+            padding: 1.5rem;
+        }    
     }
 
     .products-container{
@@ -338,15 +385,6 @@ footer{
             font-size: 1.25rem;
             width: 80%;
         }
-    }
-
-    .product{
-        height:60vh;
-        background-color: $black;
-        padding: 0;
-        h2{
-            padding: 1.5rem;
-        }    
     }
 
     .product1{
@@ -407,14 +445,17 @@ footer{
         }
     }
 
-    
-
-    // .btn{
-    //     &:hover{
-    //         background-color: $black;
-    //         color: $white;
-    //     }
-    // }
+    .btn{
+        position: absolute;
+        margin: 0;
+        width: 15%;
+        top: 0;
+        right: 5rem;
+        &:hover{
+            background-color: $black;
+            color: $white;
+        }
+    }
 }
 
 @media (min-width: 1440px){
@@ -425,14 +466,13 @@ footer{
         color: $white;
         background: $fill url("images/desktop/image-hero.jpg");
         height: 85vh;
-        padding: 3rem;
     }
 
     .hero-title{
         margin: 4rem;
         font-size: 4.5rem;
         font-weight: 200;
-        width: 48vw;
+        width: 50vw;
         
     }
 
@@ -475,12 +515,27 @@ footer{
 
     .interactive-img{
         background-image: $fill url("images/desktop/image-interactive.jpg");
-        width: 50vw;
-        height: 50vh
+        right: 15vw;
     }
 
     .about-container{
-    
+        width: 35vw;
+        height: 55vh;
+        margin: 0;
+        padding-left: 3rem;
+        padding-top: 1.5rem;
+        position: absolute;
+        left: 45vw;
+        bottom: -5vh;
+        h2{
+            font-size: 3rem;
+        }
+        p{
+            padding: 0;
+            padding-top: 1.5rem;
+            font-size: 1.25rem;
+
+        }
     }
 
     .main-products-heading{
@@ -492,15 +547,90 @@ footer{
     .products-container{
         grid-gap: 1.5rem;
         h2{
-            font-size: 1.5rem; 
+            font-size: 2rem; 
+        }
+    }
+}
+
+@media (min-width: 1440px) and (max-width: 4000px
+){
+    .products-container{
+        padding: 5rem;
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: .5rem;
+        h2{
+            font-size: 2rem;
+            width: 80%;
+        }
+    }
+
+    .product1{
+        background: linear-gradient(rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.7)), $fill url("images/desktop/image-deep-earth.jpg");
+        
+        &:hover{
+            background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), $fill url("images/desktop/image-deep-earth.jpg");
+        }
+        
+    }
+    
+    .product2{
+        background: linear-gradient(rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.7)), $fill url("images/desktop/image-night-arcade.jpg");
+        &:hover{
+            background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), $fill url("images/desktop/image-night-arcade.jpg");
+        }
+    }
+    
+    .product3{
+        background: linear-gradient(rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.7)), $fill url("images/desktop/image-soccer-team.jpg");
+        &:hover{
+            background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), $fill url("images/desktop/image-soccer-team.jpg");
+        }
+    }
+    
+    .product4{
+        background: linear-gradient(rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.7)), $fill url("images/desktop/image-grid.jpg");
+        &:hover{
+            background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), $fill url("images/desktop/image-grid.jpg");
+        }
+    }
+    
+    .product5{
+        background: linear-gradient(rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.7)), $fill url("images/desktop/image-from-above.jpg");
+        &:hover{
+            background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), $fill url("images/desktop/image-from-above.jpg");
+        }
+    }
+    
+    .product6{
+        background: linear-gradient(rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.7)), $fill url("images/desktop/image-pocket-borealis.jpg");
+        &:hover{
+            background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), $fill url("images/desktop/image-pocket-borealis.jpg");
+        }
+    }
+    
+    .product7{
+        background: linear-gradient(rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.7)), $fill url("images/desktop/image-curiosity.jpg");
+        &:hover{
+            background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), $fill url("images/desktop/image-curiosity.jpg");
+        }
+    }
+    
+    .product8{
+        background: linear-gradient(rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.7)), $fill url("images/desktop/image-fisheye.jpg");
+        &:hover{
+            background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), $fill url("images/desktop/image-fisheye.jpg");
         }
     }
 
     .btn{
-        position: relative;
+        position: absolute;
         margin: 0;
-        bottom: 70rem;
-        left: 85vw;
-        width: 10%;
+        width: 15%;
+        top: 0;
+        right: 5rem;
+        &:hover{
+            background-color: $black;
+            color: $white;
+        }
     }
 }
