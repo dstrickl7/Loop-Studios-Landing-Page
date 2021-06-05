@@ -262,6 +262,11 @@ footer p {
   padding: 0.5rem;
 }
 
+@media (max-height: 330px) {
+  .hero-title {
+    font-size: 2.5rem;
+  }
+}
 /*Tablet Layout*/
 @media (min-width: 520px) and (max-width: 670px) {
   .hero-title {
@@ -552,6 +557,10 @@ footer p {
     grid-column: 2;
     grid-row: 1;
     cursor: pointer;
+  }
+
+  .icon:hover {
+    border-bottom: 0.25rem solid white;
   }
 }
 /*Med-LG Laptop Layout*/
